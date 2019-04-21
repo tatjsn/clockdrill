@@ -45,8 +45,8 @@ function getRandomInt(max) {
 
 function App() {
   const [score, setScore] = useState(0);
-  const [questionHour, setQuestionHour] = useState(getRandomInt(12));
-  const [questionMinute, setQuestionMinute] = useState(getRandomInt(11));
+  const [questionHour, setQuestionHour] = useState(11 /*getRandomInt(12)*/);
+  const [questionMinute, setQuestionMinute] = useState(8 /*getRandomInt(11)*/);
   const [answerHour, setAnswerHour] = useState(0);
   const [answerMinute, setAnswerMinute] = useState(0);
   const [answerRelative, setAnswerRelative] = useState(0);
@@ -71,8 +71,11 @@ function App() {
       correct = (answerHour === questionHour) && (answerMinute === questionMinute);
     } else {
       // To
-      correct = (answerHour === questionHour + 1) && (10 - answerMinute === questionMinute);
+      correct = ((answerHour === questionHour + 1) || (answerHour + 12 === questionHour + 1))
+        && (10 - answerMinute === questionMinute);
     }
+
+    console.log(correct, answerHour, questionHour, answerMinute, questionMinute);
 
     if (correct) {
       setScore(score + 1);
