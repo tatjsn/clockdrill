@@ -36,7 +36,8 @@ const fullWidthControl = css`
 display: block;
 width: 100%;
 height: 40px;
-background-color: rgba(0, 0, 0, 0.1)
+background-color: rgba(0, 0, 0, 0.1);
+font-size: 20px;
 `;
 
 function getRandomInt(max) {
@@ -74,8 +75,6 @@ function App() {
       correct = ((answerHour === questionHour + 1) || (answerHour + 12 === questionHour + 1))
         && (10 - answerMinute === questionMinute);
     }
-
-    console.log(correct, answerHour, questionHour, answerMinute, questionMinute);
 
     if (correct) {
       setScore(score + 1);
@@ -121,7 +120,7 @@ width: 100%;
             <option key={item} value={item}>{item}</option>
           ))}
         </select>
-        <button className={fullWidthControl} type="button" onClick={handleAnswer}>Ok</button>
+        <button className={fullWidthControl} type="button" onClick={handleAnswer}>&#128077;</button>
       </div>
     </div>
   );
