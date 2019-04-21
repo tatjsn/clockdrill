@@ -45,8 +45,8 @@ function getRandomInt(max) {
 
 function App() {
   const [score, setScore] = useState(0);
-  const [questionHour, setQuestionHour] = useState(11 /*getRandomInt(12)*/);
-  const [questionMinute, setQuestionMinute] = useState(8 /*getRandomInt(11)*/);
+  const [questionHour, setQuestionHour] = useState(getRandomInt(12));
+  const [questionMinute, setQuestionMinute] = useState(getRandomInt(11));
   const [answerHour, setAnswerHour] = useState(0);
   const [answerMinute, setAnswerMinute] = useState(0);
   const [answerRelative, setAnswerRelative] = useState(0);
