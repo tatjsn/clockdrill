@@ -34,7 +34,7 @@ calc(${Math.sin(clockToRadian(num)) * 135}px - 50%)
 position: absolute;
 width: 80px;
 height: 12px;
-background-color: black;
+background-color: blue;
 top: 50%;
 left: 50%;
 transform-origin: center left;
@@ -45,7 +45,7 @@ transform: translate(0, -50%) rotate(${clockToRadian(hours + mins / 60)}rad)
 position: absolute;
 width: 120px;
 height: 10px;
-background-color: black;
+background-color: red;
 top: 50%;
 left: 50%;
 transform-origin: center left;
