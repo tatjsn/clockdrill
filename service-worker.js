@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/clockdrill/precache-manifest.598245f10d1f10f424aa4020f828b2fc.js"
+  "/clockdrill/precache-manifest.5056bb0210e2b48a0de61dfaec5c4553.js"
 );
 
 workbox.clientsClaim();
