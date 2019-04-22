@@ -116,17 +116,17 @@ function App() {
       setQuestionHour(getRandomInt(12));
       setQuestionMinute(getRandomInt(11));
       if (newScore % 10 === 0) {
-        soundMilestone.play();
         setShowMilestone(true);
+        setTimeout(() => soundMilestone.play(), 10);
         setTimeout(() => setShowMilestone(false), 1000);
       } else {
-        soundCorrect.play();
         setShowCorrect(true);
+        setTimeout(() => soundCorrect.play(), 10);
         setTimeout(() => setShowCorrect(false), 1000);
       }
     } else {
-      soundIncorrect.play();
       setShowIncorrect(true);
+      setTimeout(() => soundIncorrect.play(), 10);
       setTimeout(() => setShowIncorrect(false), 1000);
     }
   }
@@ -168,11 +168,11 @@ width: 100%;
             <option key={item} value={item}>{item}</option>
           ))}
         </select>
-        <button className={fullWidthControl} type="button" onClick={handleAnswer}>&#128077;</button>
+        <button className={fullWidthControl} type="button" onClick={handleAnswer}><span>&#128077;</span></button>
       </div>
-      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showCorrect})}><div>Good! &#128077;</div></div>
-      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showIncorrect})}><div>Try again &#128546;</div></div>
-      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showMilestone})}><div>&#128124;Excellent&#128124;</div></div>
+      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showCorrect})}><div>Good!<span>&#128077;</span></div></div>
+      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showIncorrect})}><div>Try again<span>&#128546;</span></div></div>
+      <div className={cx(fullScreenOverlay, { [css`display:flex;`]: showMilestone})}><div><span>&#128124;</span>Excellent<span>&#128124;</span></div></div>
     </div>
   );
 }
