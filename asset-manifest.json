@@ -1,13 +1,13 @@
 {
   "main.css": "/clockdrill/static/css/main.bf2b714c.chunk.css",
-  "main.js": "/clockdrill/static/js/main.16f7b55a.chunk.js",
-  "main.js.map": "/clockdrill/static/js/main.16f7b55a.chunk.js.map",
+  "main.js": "/clockdrill/static/js/main.80ae6c73.chunk.js",
+  "main.js.map": "/clockdrill/static/js/main.80ae6c73.chunk.js.map",
   "runtime~main.js": "/clockdrill/static/js/runtime~main.8971ec5d.js",
   "runtime~main.js.map": "/clockdrill/static/js/runtime~main.8971ec5d.js.map",
   "static/js/2.9e2ea864.chunk.js": "/clockdrill/static/js/2.9e2ea864.chunk.js",
   "static/js/2.9e2ea864.chunk.js.map": "/clockdrill/static/js/2.9e2ea864.chunk.js.map",
   "index.html": "/clockdrill/index.html",
-  "precache-manifest.fc4813ba8593e632be614df37127f8d2.js": "/clockdrill/precache-manifest.fc4813ba8593e632be614df37127f8d2.js",
+  "precache-manifest.98c41fd38f9675632db2a7cbbde2b407.js": "/clockdrill/precache-manifest.98c41fd38f9675632db2a7cbbde2b407.js",
   "service-worker.js": "/clockdrill/service-worker.js",
   "static/css/main.bf2b714c.chunk.css.map": "/clockdrill/static/css/main.bf2b714c.chunk.css.map"
 }

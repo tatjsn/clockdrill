@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/clockdrill/static/js/runtime~main.8971ec5d.js"
   },
   {
-    "revision": "e6d92533f761b4dff8ba",
-    "url": "/clockdrill/static/js/main.16f7b55a.chunk.js"
+    "revision": "ba728dc4c847e025f803",
+    "url": "/clockdrill/static/js/main.80ae6c73.chunk.js"
   },
   {
     "revision": "1c365d5432248abf2cdb",
     "url": "/clockdrill/static/js/2.9e2ea864.chunk.js"
   },
   {
-    "revision": "e6d92533f761b4dff8ba",
+    "revision": "ba728dc4c847e025f803",
     "url": "/clockdrill/static/css/main.bf2b714c.chunk.css"
   },
   {
-    "revision": "8c381f561d7b1ea8245a044134b0e036",
+    "revision": "329fbbbb3d3538c0a43e8445885aed89",
     "url": "/clockdrill/index.html"
   }
 ];
