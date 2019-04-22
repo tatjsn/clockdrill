@@ -5,15 +5,18 @@ import { Howl } from 'howler';
 import Clock from './Clock';
 
 const soundCorrect = new Howl({
-  src: ['correct2.mp3']
+  src: ['correct2.mp3'],
+  preload: true,
 });
 
 const soundIncorrect = new Howl({
-  src: ['incorrect2.mp3']
+  src: ['incorrect2.mp3'],
+  preload: true,
 });
 
 const soundMilestone = new Howl({
-  src: ['shine1.mp3']
+  src: ['shine1.mp3'],
+  preload: true,
 });
 
 const hours = [
